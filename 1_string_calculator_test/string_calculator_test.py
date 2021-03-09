@@ -1,4 +1,5 @@
 import unittest
+from string_calculator import string_calculator
 
 
 class MyTestCase(unittest.TestCase):
@@ -6,5 +7,5 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(True, False)
 
 
-if __name__ == '__main__':
-    unittest.main()
+# if __name__ == '__main__':
+#     unittest.main()
