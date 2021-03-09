@@ -19,14 +19,14 @@ class TestStringCalculator(unittest.TestCase):
         expected = 6
         self.assertEqual(actual, expected)
 
-    def test_int_input(self):  # to fail
-        actual = string_calculator(1, 2)
+    def test_int_input(self):  # to fail - user input is str
+        actual = string_calculator(1)
         expected = 3
         self.assertEqual(actual, expected)
 
-    def test_non_numeric_input(self):  # to fail
+    def test_non_numeric_input(self):
         actual = string_calculator('a,b,c')
-        expected = "what should I expect?"
+        expected = 0
         self.assertEqual(actual, expected)
 
 
