@@ -1,26 +1,34 @@
 ## To do:
-convert pseudocode:
-
-```
-class StringCalculator
-{
-    int add(string input) 
+1. convert string calculator pseudocode into python 
+    ```
+    class StringCalculator
     {
-        if (isEmpty(input)) 
+        int add(string input) 
         {
-            return 0;
-        } 
-        else 
-        {
-            numbers = split(intput, ",")
-            result = 0;
-
-            for (number in numbers) 
+            if (isEmpty(input)) 
             {
-                result += getIntFrom(number);
+                return 0;
+            } 
+            else 
+            {
+                numbers = split(intput, ",")
+                result = 0;
+    
+                for (number in numbers) 
+                {
+                    result += getIntFrom(number);
+                }
+                return result;
             }
-            return result;
         }
     }
-}
-```
+    ```
+
+    ready  <a href='https://github.com/krzysieknaw/unit_test_course/1_string_calculator_test/string_calculator.py'> string_calculator.py  </a> file
+
+
+2. Create some basic tests:  
+<a href='https://github.com/krzysieknaw/unit_test_course/1_string_calculator_test/string_calculator_test.py'> string_calculator_test.py  </a>
+### My comments:
+1. Had to extract user input outside the function - check 'mock'
+2. Two of five tests created to fail 
