@@ -1,6 +1,7 @@
 To do:
 
 convert pseudocode:
+
 class StringCalculator 
 {
     int add(string input) 
