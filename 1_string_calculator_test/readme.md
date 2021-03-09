@@ -28,7 +28,8 @@
 
 
 2. Create some basic tests:  
-<a href='https://github.com/krzysieknaw/unit_test_course/blob/main/1_string_calculator_test/string_calculator_test.py'> string_calculator_test.py  </a>
+unittest - <a href='https://github.com/krzysieknaw/unit_test_course/blob/main/1_string_calculator_test/test_string_calculator_unittest.py'> test_string_calculator_unittest.py  </a>  
+pytest - <a href='https://github.com/krzysieknaw/unit_test_course/blob/main/1_string_calculator_test/test_string_calculator_pytest.py'> test_string_calculator_pytest.py  </a>  
 ### My comments:
 1. Had to extract user input outside the function - check 'mock'
 2. Two of five tests created to fail - to check how it works
