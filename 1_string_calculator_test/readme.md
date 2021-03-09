@@ -24,7 +24,7 @@
     }
     ```
 
-    ready  <a href='https://github.com/krzysieknaw/unit_test_course/1_string_calculator_test/string_calculator.py'> string_calculator.py  </a> file
+    ready  <a href='https://raw.githubusercontent.com/krzysieknaw/unit_test_course/main/1_string_calculator_test/string_calculator.py'> string_calculator.py  </a> file
 
 
 2. Create some basic tests:  
