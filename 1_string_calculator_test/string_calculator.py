@@ -1,11 +1,14 @@
 def string_calculator(user_input):
     if user_input == "":
-        return 0  # todo isnumeric?
+        return 0
     else:
         numbers = user_input.split(",")
         result = 0
         for number in numbers:
-            result += int(number)
+            try:
+                result += int(number)
+            except:
+                pass
         return result
 
 
@@ -14,4 +17,4 @@ def string_calculator(user_input):
 #     print(string_calculator(user_input))
 #
 #
-# main
+# main()
