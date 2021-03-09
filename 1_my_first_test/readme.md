@@ -1,8 +1,8 @@
-To do:
-
+## To do:
 convert pseudocode:
 
-class StringCalculator 
+```
+class StringCalculator
 {
     int add(string input) 
     {
@@ -23,3 +23,4 @@ class StringCalculator
         }
     }
 }
+```
