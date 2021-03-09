@@ -1,9 +1,9 @@
 def string_calculator():
-    add = input("enter the number ")
+    add = input("enter the numbers ")
     if add == "":
         return 0  # todo isnumeric?
     else:
-        numbers = [x for x in str(add)]
+        numbers = add.split(",")
         result = 0
         for number in numbers:
             result += int(number)
