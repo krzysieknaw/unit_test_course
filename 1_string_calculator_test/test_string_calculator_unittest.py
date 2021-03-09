@@ -1,36 +1,36 @@
 import unittest
-from string_calculator import string_calculator
+from string_calculator import add
 
 
 class TestStringCalculator(unittest.TestCase):
     def test_empty(self):
-        actual = string_calculator("")
+        actual = add("")
         expected = 0
         self.assertEqual(actual, expected)
 
     def test_single_nr(self):
         for nr in ['0', '1', '12', '-1', '-12']:
-            actual = string_calculator(nr)
+            actual = add(nr)
             expected = int(nr)
             self.assertEqual(actual, expected)
 
     def test_multi_nrs(self):
-        actual = string_calculator('1,2,3')
+        actual = add('1,2,3')
         expected = 6
         self.assertEqual(actual, expected)
 
     def test_multi_nrs_not_int(self): # to fail
-        actual = string_calculator('1.1,2.2,3.3')
+        actual = add('1.1,2.2,3.3')
         expected = 6.6
         self.assertEqual(actual, expected)
 
     def test_int_input(self):  # to fail - user input is str
-        actual = string_calculator(1)
+        actual = add(1)
         expected = 3
         self.assertEqual(actual, expected)
 
     def test_non_numeric_input(self):
-        actual = string_calculator('a,b,c')
+        actual = add('a,b,c')
         expected = 0
         self.assertEqual(actual, expected)
 
