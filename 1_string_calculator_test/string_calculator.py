@@ -1,4 +1,4 @@
-def string_calculator(user_input):
+def add(user_input):
     if user_input == "":
         return 0
     else:
@@ -14,7 +14,7 @@ def string_calculator(user_input):
 
 # def main():
 #     user_input = input("enter the numbers ")
-#     print(string_calculator(user_input))
+#     print(add(user_input))
 #
 #
 # main()
