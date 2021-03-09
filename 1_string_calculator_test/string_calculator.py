@@ -1,17 +1,17 @@
-def string_calculator():
-    add = input("enter the numbers ")
-    if add == "":
+def string_calculator(user_input):
+    if user_input == "":
         return 0  # todo isnumeric?
     else:
-        numbers = add.split(",")
+        numbers = user_input.split(",")
         result = 0
         for number in numbers:
             result += int(number)
         return result
 
 
-def main():
-    print(string_calculator())
-
-
-main()
+# def main():
+#     user_input = input("enter the numbers ")
+#     print(string_calculator(user_input))
+#
+#
+# main()
