@@ -31,4 +31,4 @@
 <a href='https://github.com/krzysieknaw/unit_test_course/blob/main/1_string_calculator_test/string_calculator_test.py'> string_calculator_test.py  </a>
 ### My comments:
 1. Had to extract user input outside the function - check 'mock'
-2. One of five tests created to fail - to check how it works
+2. Two of five tests created to fail - to check how it works

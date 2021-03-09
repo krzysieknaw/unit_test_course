@@ -19,6 +19,11 @@ class TestStringCalculator(unittest.TestCase):
         expected = 6
         self.assertEqual(actual, expected)
 
+    def test_multi_nrs_not_int(self): # to fail
+        actual = string_calculator('1.1,2.2,3.3')
+        expected = 6.6
+        self.assertEqual(actual, expected)
+
     def test_int_input(self):  # to fail - user input is str
         actual = string_calculator(1)
         expected = 3
